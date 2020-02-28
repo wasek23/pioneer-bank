@@ -13,9 +13,72 @@
 		<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 	</head>
 	<body>
-		<h1 class="text-center mb-5">Welcome to Pioneer Bank</h1>
+		<!-- Login Area -->
+		<div id="loginArea">
+			<div class="container">
+				<h1 class="text-center mb-5">Welcome to Pioneer Bank</h1>
+
+				<div class="formArea px-2 px-sm-4 px-md-5">
+					<h4 class="text-center mb-4">LOGIN</h4>
+
+					<input type="email" name="email" id="email" class="form-control mb-4" placeholder="Enter your E-mail" />
+					<input type="password" name="password" id="password" class="form-control mb-4" placeholder="Enter your Password" />
+
+					<input type="submit" value="Login" id="btnLogin" class="btn btn-primary float-right py-2 px-4" />
+					<div class="clearfix"></div>
+				</div> <!-- Login Form -->
+			</div> <!-- Container -->
+		</div> <!-- Login Area -->
+
+		<!-- Transaction Area -->
+		<div id="transactionArea">
+			<div class="container">
+				<div class="row mb-5">
+					<div class="col-md-4 mb-4">
+						<div class="status deposit">
+							<h5>Deposit</h5>
+							<h2 class="amount">$ <span id="currentDeposit">00</span></h2>
+						</div>
+					</div>
+					<div class="col-md-4 mb-4">
+						<div class="status withdraw">
+							<h5>Withdraw</h5>
+							<h2 class="amount">$ <span id="currentWithdraw">00</span></h2>
+						</div>
+					</div>
+					<div class="col-md-4 mb-4">
+						<div class="status balance">
+							<h5>Balance</h5>
+							<h2 class="amount">$ <span id="currentBalance">1200</span></h2>
+						</div>
+					</div>
+				</div> <!-- Row -->
+
+				<div class="row">
+					<div class="col-md-6 mb-4">
+						<div class="formArea px-2 px-sm-3 px-md-4">
+							<h4 class="mb-4">Deposit</h4>
+							<input type="number" id="depositInput" class="form-control mb-4" placeholder="$ amount you want to deposit" />
+
+							<button id="btnDeposit" class="btn btn-primary float-right py-2 px-4">Deposit</button>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="col-md-6 mb-4">
+						<div class="formArea px-2 px-sm-3 px-md-4">
+							<h4 class="mb-4">Withdraw</h4>
+							<input type="number" id="withdrawInput" class="form-control mb-4" placeholder="$ amount you want to withdraw" />
+
+							<button id="btnWithdraw" class="btn btn-primary float-right py-2 px-4">Withdraw</button>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div> <!-- Row -->
+			</div> <!-- Container -->
+		</div> <!-- Transaction Area -->
 
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<script src="script.js"></script>
 	</body>
 </html>
