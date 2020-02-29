@@ -1,11 +1,8 @@
 // Login button event listener
 const btnLogin = document.getElementById("btnLogin");
 btnLogin.addEventListener("click", function(){
-    const loginArea = document.getElementById("loginArea");
-    const transactionArea = document.getElementById("transactionArea");
-
-    loginArea.style.display = "none";
-    transactionArea.style.display = "block";
+    document.getElementById("loginArea").style.display = "none";
+    document.getElementById("transactionArea").style.display = "block";
 });
 
 
